@@ -66,7 +66,7 @@ if __name__ == '__main__':
     else:
         i = 0
         path = ""
-        # Process Path Given and Catch the Relative Path
+        # Process the Path Given and Catch the Relative Path
         while(i<len(sys.argv[1].split("/"))-1):                                          
             path += sys.argv[1].split("/")[i] + "/"
             i += 1

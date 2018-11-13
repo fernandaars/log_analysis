@@ -36,7 +36,7 @@ def convertTimeToFractions(groups):
         durationInFraction += float(duration[2])/3600
         group[1] = round(durationInFraction, 2)
 
-# Sum a Two Durations in 'Hours:Minutes:Seconds' Format
+# Sum Two Durations in 'Hours:Minutes:Seconds' Format
 def sumDurations(init, final):
     init = init.split(":")
     final = final.split(":")
@@ -69,7 +69,7 @@ def processFile(node, filePointer, groups):
         month = allocationDate.month
         year = allocationDate.year
 
-        date = str(year)+"/"+str(month)
+        date = str(month)+"/"+str(year)
         for group in groups:
             if(group[0] == date):
                 group[1] = sumDurations(group[1], duration)
@@ -92,7 +92,7 @@ if __name__ == '__main__':
         while(i<len(yearsOfAnalysis)):
             j = 0
             while(j<12):
-                groups[(i*12)+j] = [str(yearsOfAnalysis[i])+"/"+str(j+1), "0:0:0", numOfNodes]
+                groups[(i*12)+j] = [str(j+1)+"/"+str(yearsOfAnalysis[i]), "0:0:0", numOfNodes]
                 j += 1
             i += 1
         # For Each Node,
@@ -110,7 +110,7 @@ if __name__ == '__main__':
             currentNode += 1
         # Convert The Durations to 'Hours,Fractions Of Hours' Format
         convertTimeToFractions(groups)
-        # Write Final Final.
+        # Write Final File.
         writeGroupFile(groups, typeOfNode);
 
 
