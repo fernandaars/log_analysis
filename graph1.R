@@ -34,5 +34,5 @@ graph <- ggplot(complete_data, aes(xAxis), group=1) +
   geom_line(aes(y = yAxis5, colour = "TelosB Sensors"), group=1) +
   geom_line(aes(y = yAxis6, colour = "TelosB VM's"), group=1)
 
-print(graph + labs(title= "Medium Usage of FUTEBOL UFMG Testbed by Type of Node",
-                   y="Sum of Hours of Use in a Month", x = "Month Of Analysis", colour = "Types of Nodes"))
+print(graph + labs(title= "Usage of FUTEBOL UFMG Testbed by Type of Node",
+                   y="Sum of Hours of Use in a Month (h)", x = "Month Of Analysis", colour = "Types of Nodes"))

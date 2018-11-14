@@ -36,5 +36,5 @@ graph <- ggplot(complete_data, aes(xAxis), group=1) +
   geom_line(aes(y = yAxis6, colour = "TelosB VM's"), group=1) + 
   scale_y_continuous(labels = scales::percent)
 
-print(graph + labs(title= "Medium Usage of FUTEBOL UFMG Testbed by Type of Node",
-                   y="Percentage of Hours of Use in a Month", x = "Month OF Analysis", colour = "Types of Nodes"))
+print(graph + labs(title= "Medum Usage of FUTEBOL UFMG Testbed by Type of Node",
+                   y="Percentage of Hours of Use i a Month", x = "Month OF Analysis", colour = "Types of Nodes"))
