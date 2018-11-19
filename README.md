@@ -5,7 +5,7 @@ Python Scripts to Create the Statistics About the Usage of The FUTEBOL UFMG Test
 ## First Scripts - individual_results.py
 
 * This script generate the durations of the allocations for each individual node, creating files named as 'node_#'.
-* ATTENTION! This script uses the Coordinator logs, found at the folder coordinator/coordinator-logs/<date>. If your testbed doesn't use the Software Coordinator, but have logs of the sql queries made during allocations, please send me an e-mail at fernandaaprsilva@gmail.com and i will try to help you to adapt the scripts. 
+* ATTENTION! This script uses the Coordinator logs, found at the folder coordinator/coordinator-logs/date. If your testbed doesn't use the Software Coordinator, but have logs of the sql queries made during allocations, please send me an e-mail at fernandaaprsilva@gmail.com and i will try to help you to adapt the scripts. 
 
 * Usage:
 
