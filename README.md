@@ -5,6 +5,10 @@ Python Scripts to Create the Statistics About the Usage of The FUTEBOL UFMG Test
 ## First Scripts - individual_results.py
 
 * This script generate the durations of the allocations for each individual node, creating files named as 'node_#'.
+<span style="color:red>
+* ATTENCION! This script uses the Coordinator logs, found at the folder coordinator/coordinator-logs/<date>. If your testbed doesn't use the Software Coordinator, but have logs of the sql queries made during allocations, please send me an e-mail at fernandaaprsilva@gmail.com and i will try to help you to adapt the scripts. 
+</span>
+
 * Usage:
 
 ```bash  
@@ -14,7 +18,9 @@ python python individual_results.py <Complete Path of First Log File> <Complete 
 ## Second Script - group_results.py
 
 * This script generate the durations of the allocations for each type of nodes, using the files created by the previous script and creating files named as 'name_of_the_group.csv' as result.
+<span style="color:red>
 * ATTENCION! To adapt the script to another testbed, the following variables need to be changed to mirror the Types of the Nodes Available and the Amount of Logs:
+</span>
 
 ```python
 yearsOfAnalysis = [2017, 2018]
@@ -26,7 +32,6 @@ nodes = [[11, 18, "usrps_vms"],
          [60, 75, "telosb"],
          [80, 87, "telosb_vms"]]
 ```
-
 
 * Usage:
 
