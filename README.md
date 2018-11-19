@@ -10,7 +10,7 @@ Python Scripts to Create the Statistics About the Usage of The FUTEBOL UFMG Test
 * Usage:
 
 ```bash  
-python python individual_results.py <Complete Path of First Log File> <Complete Path of Last Log File> 
+python individual_results.py <Complete Path of First Log File> <Complete Path of Last Log File> 
 ```  
 
 ## Second Script - group_results.py
